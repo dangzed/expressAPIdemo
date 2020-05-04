@@ -1,19 +1,44 @@
 h1 Hello user
 span(style="font-size:20px;color:blue")= user.name
 hr
-a(href="/users/create") New
+- let isAdmin = (user.email==='dangyeuzed@gmail.com');
+- let matchedEmail = user.email;
+if isAdmin
+    a(href="/users/create") New
 form(action="/users/search", method="GET" )
     input(type="text" name="q" value = fixedInput)
     button Search
-ul
-each user in users
-    li
-        span= user.name
-        span &nbsp;
-        a(href='/users/' + user.id) View
-        span &nbsp;
-        a(href='/users/delete/' + user.id) Delete
-        span &nbsp;
-        a(href='/users/update/' + user.id) Update
-        hr
+if isAdmin
+    ul
+    each user in users
+        li
+            span= user.name
+            span &nbsp;
+            a(href='/users/' + user.id) View
+            span &nbsp;
+            a(href='/users/delete/' + user.id) Delete
+            span &nbsp;
+            a(href='/users/update/' + user.id) Update
+            hr
+else
+    ul
+    each user in users
+        - let isMatched = (user.email === matchedEmail)
+        if isMatched
+            li
+                span= user.name
+                span &nbsp;
+                a(href='/users/' + user.id) View
+                span &nbsp;
+                a(href='/users/delete/' + user.id) Delete
+                span &nbsp;
+                a(href='/users/update/' + user.id) Update
+            hr
+        else
+            li
+                span= user.name
+                span &nbsp;
+                a(href='/users/' + user.id) View
+                span &nbsp;
+            hr
 a(href="/auth/logout") Log out

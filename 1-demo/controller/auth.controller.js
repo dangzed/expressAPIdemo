@@ -19,6 +19,7 @@ module.exports.postLogin = (req, res) => {
         console.log('Password not match')
         return;
     }
+
     res.cookie('userId', user.id, {
         signed: true
     })
