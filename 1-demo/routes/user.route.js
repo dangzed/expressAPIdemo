@@ -11,10 +11,16 @@ router.get('/',userController.index)
 router.get('/create', userController.getCreate)
 router.get('/search', userController.search)
 router.get('/:id', userController.view)
+router.get('/delete/:id',userController.delete)
+router.get('/update/:id',userController.getUpdate)
 router.post('/create',
-    upload.single('avatar') ,
+    /*upload.single('avatar') ,*/
     validate.postCreate,
     userController.postCreate
 )
+router.post('/update/:id',
+    validate.postCreate,
+    userController.postUpdate)
+
 
 module.exports = router

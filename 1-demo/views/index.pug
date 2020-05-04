@@ -7,13 +7,13 @@ form(action="/users/search", method="GET" )
     button Search
 ul
 each user in users
-  li
-    span= user.name
-    span &nbsp;
-    a(href='/users/'+user.id) View
-    span &nbsp;
-    a(href='/') Delete
-    span &nbsp;
-    a(href='/') Update
-    hr
+    li
+        span= user.name
+        span &nbsp;
+        a(href='/users/' + user.id) View
+        span &nbsp;
+        a(href='/users/delete/' + user.id) Delete
+        span &nbsp;
+        a(href='/users/update/' + user.id) Update
+        hr
 a(href="/auth/logout") Log out

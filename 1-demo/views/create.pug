@@ -1,6 +1,6 @@
 h1 Create a new user
-h3= user.name
-form(action="", method="POST", enctype="multipart/form-data")
+//h3= user.name
+form(action="", method="POST")
     label Name
     input(type="text" name="name")
     hr
@@ -11,9 +11,9 @@ form(action="", method="POST", enctype="multipart/form-data")
     input(type="text" name="email")
     hr
     label Password
-    input(type="text" name="password")
+    input(type="password" name="password")
     hr
-    label Avatar
-    input(type="file" name="avatar")
-    hr
+    //label Avatar
+    //input(type="file" name="avatar")
+    //hr
     button Create
