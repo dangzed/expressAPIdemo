@@ -1,0 +1,15 @@
+h1 Hello user
+span(style="font-size:20px;color:blue")= user.name
+hr
+a(href="/users/create") New
+form(action="/users/search", method="GET" )
+    input(type="text" name="q" value = fixedInput)
+    button Search
+ul
+each user in users
+  li
+    span= user.name
+    span &nbsp;
+    a(href='/users/'+user.id) View
+    hr
+a(href="/auth/logout") Log out
