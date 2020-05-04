@@ -17,24 +17,5 @@
       "avatar": "uploads\\25c1051812d81af4f25b7e7f5de6557e"
     }
   ],
-  "transfers": [
-    {
-      "id": "lqi0lYIkk",
-      "account": "123456",
-      "amount": 200000,
-      "userId": "zyBmAaFj8"
-    },
-    {
-      "id": "CgV18oYta",
-      "account": "x123abc",
-      "amount": 100000,
-      "userId": "zyBmAaFj8"
-    },
-    {
-      "id": "pzvSWnDhG",
-      "account": "hacker123",
-      "amount": 10000000,
-      "userId": "zyBmAaFj8"
-    }
-  ]
+  "transfers": []
 }
