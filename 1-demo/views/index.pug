@@ -11,5 +11,9 @@ each user in users
     span= user.name
     span &nbsp;
     a(href='/users/'+user.id) View
+    span &nbsp;
+    a(href='/') Delete
+    span &nbsp;
+    a(href='/') Update
     hr
 a(href="/auth/logout") Log out
