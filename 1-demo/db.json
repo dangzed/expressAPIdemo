@@ -6,7 +6,7 @@
       "id": "R8dYtQUuQ",
       "email": "dangyeuzed@gmail.com",
       "password": "e10adc3949ba59abbe56e057f20f883e",
-      "avatar": "uploads\\a2f436e4dc96cc5bd7030f85c6748a11"
+      "avatar": "b64e098afe888e000dd3448fc2375656"
     },
     {
       "name": "Huy Quang",
@@ -14,21 +14,31 @@
       "email": "huyquang@gmail.com",
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "id": "kQzLgyqSU",
-      "avatar": "uploads\\2d30d9ba09681291bbbf3492c68e134d"
+      "avatar": "ac32bd270a0da1a1b589a5adca221033"
     },
     {
       "name": "Ta Hoang Viet",
       "phone": "0901234121",
       "email": "thvroyal@gmail.com",
       "password": "e10adc3949ba59abbe56e057f20f883e",
-      "id": "u3T0ki8cV"
+      "id": "u3T0ki8cV",
+      "avatar": "142460aa98ef0c5c58b2273214935fc1"
     },
     {
       "name": "Khai Pham",
       "phone": "0901234121",
       "email": "trachanhpk7@gmail.com",
       "password": "e10adc3949ba59abbe56e057f20f883e",
-      "id": "gVypHNf_I"
+      "id": "gVypHNf_I",
+      "avatar": "4cac88b0f89b00d3b1a55e29dfb299ac"
+    },
+    {
+      "name": "Marshall Eriksen",
+      "phone": "123",
+      "email": "123@123",
+      "password": "202cb962ac59075b964b07152d234b70",
+      "id": "ctwPUxFWC",
+      "avatar": "8d294ccc890eaea70f742361ffdbcd30"
     }
   ]
 }

@@ -1,4 +1,4 @@
-h1 Hello user
+h1 Hello 401
 span(style="font-size:20px;color:blue")= user.name
 hr
 - let isAdmin = (user.email==='dangyeuzed@gmail.com');
@@ -29,8 +29,6 @@ else
                 span= user.name
                 span &nbsp;
                 a(href='/users/' + user.id) View
-                span &nbsp;
-                a(href='/users/delete/' + user.id) Delete
                 span &nbsp;
                 a(href='/users/update/' + user.id) Update
             hr

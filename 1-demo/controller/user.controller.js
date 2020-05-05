@@ -21,7 +21,7 @@ module.exports.getCreate = (req, res) => {
 
 module.exports.postCreate = (req, res) => {
     req.body.id = shortId.generate()
-    //req.body.avatar = req.file.path
+    req.body.avatar = req.file.filename
     req.body.password = md5(req.body.password)
     db.get("users").push(req.body).write()
     res.redirect('/users')
@@ -30,8 +30,6 @@ module.exports.postCreate = (req, res) => {
 module.exports.view = (req, res) => {
     let id = (req.params.id);
     let user = db.get("users").find({"id": id}).value();
-    console.log('User inserted: ')
-    console.log(user)
     res.render('view', {user: user});
 }
 
@@ -56,7 +54,8 @@ module.exports.postUpdate = (req, res) => {
             "name": req.body.name,
             "phone": req.body.phone,
             "email": req.body.email,
-            "password": hashedPassword
+            "password": hashedPassword,
+            "avatar" : req.file.filename
         })
         .write()
     res.redirect('/users/'+id)

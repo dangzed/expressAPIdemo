@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(cookieParser('best zed in the world'))
 
+app.use(express.static('uploads'))
 app.use('/users', authMiddleware.requireAuth, userRoute)
 app.use('/auth', authRoute)
 app.get('/', (req, res) => {
